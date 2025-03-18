@@ -1,5 +1,5 @@
 ---
-title: "09.23.2024 Gcamp Analysis for FB Video Aligned"
+title: "Gcamp Analysis"
 author: "Calvin Cho"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format: pdf
@@ -95,8 +95,8 @@ conditionalaverage_columns <- merged_data[, seq(3, ncol(merged_data), by = 2)]
 totalaveragedata <- cbind(x_column, totalaverage_columns)
 conditionalaveragedata <- cbind(x_column, conditionalaverage_columns)
 
-write.csv(totalaveragedata, "09232024data_total.csv", 
+write.csv(totalaveragedata, "data_total.csv", 
           row.names = FALSE)
-write.csv(conditionalaveragedata, "09232024_data_conditional.csv", 
+write.csv(conditionalaveragedata, "data_conditional.csv", 
           row.names = FALSE)
 ```
